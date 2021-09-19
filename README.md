@@ -13,12 +13,13 @@ One example is to use visual check to see what's going on. Below we see there is
 ![alt text](https://github.com/ah0101/vigilant-octo-eureka1/blob/main/download%20(1).png "Close Vs Adj Close")
 
 Using describe we have the following
-
-|count  |    1038.000000  ||
-|mean   |    5.499913     |
-|std    |     9.748196    |
-|min    |   -33.025085    |
-|25%    |     3.777889    |
-|50%    |     5.693078    |
-|75%    |     6.516651    |
-|max    |   308.837845    |
+| Varible | Value            |
+|------   | :---------------:| 
+|count    |    1038.000000   |
+|mean     |    5.499913      |
+|std      |     9.748196     |
+|min      |   -33.025085     |
+|25%      |     3.777889     |
+|50%      |     5.693078     |
+|75%      |     6.516651     |
+|max      |   308.837845     |
