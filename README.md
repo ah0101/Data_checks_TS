@@ -6,7 +6,7 @@ This is a way to analysis for data errors in a following table
 | --------- |:---------:|:---------:  |:---------:  |:---------:  |:---------:  |
 |2017-02-17	| 16.635032	| 138.449997	| 139.160004	| 138.250000	| 139.110001	| 132.366592| 
 
-We cover data type checks, a desription of the data with visual plots to see what is happening
+We cover data type checks, a desription of the data with visual plots to see what is happening.
 
 One example is to use visual check to see what's going on. Below we see there is a strange Adj Close price.
 
@@ -30,7 +30,7 @@ Now we can find the locations where values are 0 those odd ones.
 
 df[df['Signal'] == 0.0].index
 
-also we should recall the normal plots
+Also we should recall the normal plots:
 
 df['Close'].hist(figsize=(12,6))
 
@@ -40,7 +40,7 @@ then we can do the following code:
 
 df[~(df['Close'] <= df['High'])] and df[~(df['Close'] >= df['Low'])]
 
-where we notice some repeated values that we can investigate and ask what's going on.
+We notice some repeated values that we can investigate and ask what's going on.
 
 After we cleansed the data then we can look at how the data looks like:
 
@@ -61,3 +61,6 @@ visualizer.show()
 
 ![alt text](https://github.com/ah0101/vigilant-octo-eureka1/blob/main/test%20%26%20train.png "test&train")
 
+pay attention to the R-Square here and the distribution of the data.
+
+Then towards the end we also use a Regression and Booasting Tree to the data as well.
