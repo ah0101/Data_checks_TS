@@ -1,1 +1,1 @@
-# Time Series Checks
+# Data Checks
