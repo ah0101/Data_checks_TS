@@ -9,6 +9,7 @@ This is a way to analysis for data errors in a following table
 We cover data type checks, a desription of the data with visual plots to see what is happening
 
 One example is to use visual check to see what's going on. Below we see there is a strange Adj Close price.
+
 df[['Close','Adj Close']].plot(figsize =(16,8))
 
 ![alt text](https://github.com/ah0101/vigilant-octo-eureka1/blob/main/download%20(1).png "Close Vs Adj Close")
@@ -47,9 +48,13 @@ we can do a regression on this to see how the test and train data is like.
 
 
 #now we have Train a Simple Linear Regression and Evaluate Residual Plot
+
 visualizer = ResidualsPlot(LinearRegression(),size=(1080, 720))
+
 visualizer.fit(train_x_1.values.reshape(-1, 1), train_y_1.values.reshape(-1, 1))
+
 visualizer.score(dev_x_1.values.reshape(-1, 1), dev_y_1.values.reshape(-1, 1))
+
 visualizer.show()
 
 ![alt text](https://github.com/ah0101/vigilant-octo-eureka1/blob/main/test%20%26%20train.png "test&train")
