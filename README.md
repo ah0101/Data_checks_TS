@@ -10,6 +10,7 @@ We cover data type checks, a desription of the data with visual plots to see wha
 
 One example is to use visual check to see what's going on. Below we see there is a strange Adj Close price.
 df[['Close','Adj Close']].plot(figsize =(16,8))
+
 ![alt text](https://github.com/ah0101/vigilant-octo-eureka1/blob/main/download%20(1).png "Close Vs Adj Close")
 
 Using describe we have the following
