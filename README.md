@@ -33,16 +33,18 @@ df[df['Signal'] == 0.0].index
 also we should recall the normal plots
 
 df['Close'].hist(figsize=(12,6))
+
 ![alt text](https://github.com/ah0101/vigilant-octo-eureka1/blob/main/close%20image.png "Close hist")
 
 then we can do the following code:
+
 df[~(df['Close'] <= df['High'])] and df[~(df['Close'] >= df['Low'])]
 
 where we notice some repeated values that we can investigate and ask what's going on.
 
 After we cleansed the data then we can look at how the data looks like:
 
-![alt text](hhttps://github.com/ah0101/vigilant-octo-eureka1/blob/main/visual.png "visual")
+![alt text](https://github.com/ah0101/vigilant-octo-eureka1/blob/main/visual.png "visual")
 
 we can do a regression on this to see how the test and train data is like.
 
